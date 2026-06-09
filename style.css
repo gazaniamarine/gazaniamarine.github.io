@@ -134,7 +134,7 @@ strong { font-weight: 600; color: var(--primary); }
   display: grid;
   grid-template-columns: 1fr 300px;
   gap: 4rem;
-  align-items: center;
+  align-items: flex-start;
 }
 .hero-label {
   font-size: 0.85rem;
@@ -167,8 +167,14 @@ strong { font-weight: 600; color: var(--primary); }
   font-size: 1rem;
   color: var(--secondary);
   max-width: 580px;
-  margin-bottom: 1.6rem;
+  margin-bottom: 1rem;
   line-height: 1.85;
+}
+.hero-bio-personal {
+  font-size: 0.95rem;
+  color: var(--muted);
+  font-style: italic;
+  margin-bottom: 1.4rem;
 }
 
 /* Hero Photo */
@@ -176,6 +182,7 @@ strong { font-weight: 600; color: var(--primary); }
   display: flex;
   justify-content: center;
   position: relative;
+  padding-top: 1.5rem;
 }
 .hero-photo {
   width: 260px;
