@@ -547,6 +547,28 @@ strong { font-weight: 600; color: var(--primary); }
 }
 .proj-tags { margin-bottom: 0; }
 
+/* ===== OTHER PROJECTS (de-emphasized) ===== */
+.other-projects { margin-top: 2.5rem; }
+.subsection-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--secondary);
+  margin-bottom: 0.35rem;
+}
+.subsection-desc {
+  font-size: 0.85rem;
+  color: var(--muted);
+  margin-bottom: 1.25rem;
+}
+.proj-card-sm {
+  background: var(--bg-alt);
+  box-shadow: none;
+}
+.proj-card-sm:hover {
+  box-shadow: var(--shadow-sm);
+  transform: none;
+}
+
 /* ===== EDUCATION ===== */
 .edu-list { display: flex; flex-direction: column; gap: 1.1rem; }
 .edu-card {
