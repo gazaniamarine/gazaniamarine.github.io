@@ -191,7 +191,7 @@
               <span class="exp-phase-date">Nov 2025 &ndash; May 2026</span>
             </div>
             <ul class="exp-bullets">
-              <li>Contributed to <strong>AW-FNO</strong>, a gated dual-branch neural operator (Fourier + Wavelet) for turbulent flow super-resolution, outperforming standalone FNO/WNO baselines across four PDE benchmarks &mdash; see flagship JHTDB result below.</li>
+              <li>Contributed to <strong>AW-FNO</strong>, a gated dual-branch neural operator (Fourier + Wavelet) for turbulent flow super-resolution, outperforming standalone FNO/WNO baselines across four PDE benchmarks &mdash; presented at ICCFD13, 2026; see the JHTDB follow-up result below.</li>
               <li>Core contributor to <strong>SciREX</strong>, a modular scientific computing ML library: designed scalable architecture used in research and industrial projects.</li>
               <li>Building a <strong>transformer-based Scientific Foundation Model</strong> (India AI Mission) pre-trained on multi-physics PDE data, with pipelines linking simulations to LLM-generated physics explanations.</li>
             </ul>
@@ -227,9 +227,9 @@
             <img src="assets/jhtdb-gate.png" loading="lazy" alt="Four-panel figure from AW-FNO's JHTDB evaluation: the bicubic-upsampled low-resolution vorticity input, the AW-FNO super-resolved prediction closely reproducing fine vortex structure, the target's velocity-gradient-magnitude map showing thin high-strain vortex filaments, and the learned wavelet gate map whose elevated-weight contours trace those same filaments (spatial correlation ρ = +0.58 for this sample)." />
           </div>
           <div class="highlight-body">
-            <span class="highlight-tag">Flagship Result &middot; AW-FNO &middot; ICCFD13 2026</span>
+            <span class="highlight-tag">Follow-up Result &middot; Extends AW-FNO (ICCFD13 2026)</span>
             <h3>Gate routing discovers turbulence intermittency (JHTDB)</h3>
-            <p>AW-FNO evaluated on super-resolution of JHTDB isotropic turbulence (isotropic4096, 128&sup2;, 4&times;): the rich-gate model achieved the lowest error (rel-L² <strong>0.0232</strong> vs FNO's 0.0250 and WNO's 0.0247). The learned gate's wavelet weight (1&minus;&alpha;) correlates spatially with velocity-gradient magnitude |&nabla;u| at &rho; &approx; +0.48 (up to +0.58 per sample), concentrating on high-strain vortex filaments &mdash; behaviour absent in statistically homogeneous forced-NS data.</p>
+            <p>A follow-up experiment extending the ICCFD13 paper to a second, more intermittent turbulence regime &mdash; not part of the published paper. AW-FNO evaluated on super-resolution of JHTDB isotropic turbulence (isotropic4096, 128&sup2;, 4&times;): the rich-gate model achieved the lowest error (rel-L² <strong>0.0232</strong> vs FNO's 0.0250 and WNO's 0.0247). The learned gate's wavelet weight (1&minus;&alpha;) correlates spatially with velocity-gradient magnitude |&nabla;u| at &rho; &approx; +0.48 (up to +0.58 per sample), concentrating on high-strain vortex filaments &mdash; behaviour absent in statistically homogeneous forced-NS data.</p>
             <a href="https://github.com/gazaniamarine/AW-FNO/tree/main/outputs/jhtdb" class="pub-link" target="_blank" rel="noopener">
               <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
               JHTDB outputs on GitHub
@@ -270,12 +270,12 @@
 
         <div class="pub-card reveal">
           <div class="pub-card-header">
-            <span class="pub-badge">Conference</span>
-            <span class="pub-status">Accepted</span>
+            <span class="pub-badge">Presented at ICCFD13 2026, Milan</span>
+            <span class="pub-status">Paper No. ICCFD13-2026-311</span>
           </div>
-          <h3 class="pub-title">AW-FNO: An Adaptive approach for Fluid flow Super-resolution via Gated Wavelet-Fourier Learning</h3>
-          <p class="pub-authors">Mamta Saini, Parikshit Mahajan, <strong>Gazania Marine Jyrwa</strong>, Diya Nagchaudhury, Sashikumaar Ganesan</p>
-          <p class="pub-venue">13th International Conference on Computational Fluid Dynamics (ICCFD13), 2026</p>
+          <h3 class="pub-title">AW-FNO: An Adaptive Approach for Fluid Flow Super-Resolution via Gated Wavelet-Fourier Learning</h3>
+          <p class="pub-authors">Mamta Saini*, Parikshit Mahajan* <em>(*equal contribution)</em>, <strong>Gazania Marine Jyrwa</strong>, Diya Nagchaudhury</p>
+          <p class="pub-venue">13th International Conference on Computational Fluid Dynamics (ICCFD13) &middot; Milan, Italy &middot; July 6&ndash;10, 2026</p>
           <div class="pub-links">
             <a href="https://github.com/gazaniamarine/AW-FNO" class="pub-link" target="_blank" rel="noopener">
               <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
@@ -304,7 +304,7 @@
               <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
             </a>
           </div>
-          <p class="proj-desc">Gated dual-branch neural operator (Fourier + Wavelet) for turbulent flow super-resolution, outperforming standalone FNO/WNO baselines across four PDE benchmarks including JHTDB isotropic turbulence. Joint work accepted at ICCFD13, 2026 &mdash; see the flagship result under Research.</p>
+          <p class="proj-desc">Gated dual-branch neural operator (Fourier + Wavelet) for turbulent flow super-resolution, outperforming standalone FNO/WNO baselines across four PDE benchmarks (1D Burgers, 2D Darcy, 2D Navier&ndash;Stokes, 4&times; HIT super-resolution). On HIT SR: mean PSNR <strong>57.40 dB</strong> / SSIM <strong>0.9991</strong> vs FNO's 54.38 dB/0.9985 and WNO's 48.98 dB/0.9944. Presented at ICCFD13, Milan 2026 &mdash; see the JHTDB follow-up under Research.</p>
           <div class="tag-group proj-tags">
             <span class="tag tag-gray">PyTorch</span>
             <span class="tag tag-gray">Neural Operators</span>
