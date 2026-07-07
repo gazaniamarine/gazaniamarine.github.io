@@ -25,30 +25,6 @@
   --pill-bg:      #f1f5f9;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --bg:           #0a0f1a;
-    --bg-alt:       #10192b;
-    --primary:      #e6ebf3;
-    --secondary:    #a3b0c2;
-    --muted:        #6b7890;
-    --accent:       #5b9bf7;
-    --accent-light: rgba(91,155,247,0.14);
-    --accent-dark:  #7fb1fa;
-    --green:        #34d399;
-    --border:       #22314a;
-    --shadow-sm:    0 1px 3px rgba(0,0,0,.35), 0 1px 2px rgba(0,0,0,.25);
-    --shadow:       0 4px 6px rgba(0,0,0,.35), 0 2px 4px rgba(0,0,0,.25);
-    --shadow-lg:    0 10px 25px rgba(0,0,0,.45), 0 4px 10px rgba(0,0,0,.3);
-    --footer-bg:    #060a14;
-    --navbar-bg:    rgba(10,15,26,0.85);
-    --navbar-mobile-bg: rgba(10,15,26,0.97);
-    --hero-gradient: linear-gradient(140deg, #0a0f1a 0%, #0d1626 55%, #0a1712 100%);
-    --chip-bg:      #10192b;
-    --pill-bg:      rgba(255,255,255,0.06);
-  }
-}
-
 /* ===== RESET ===== */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 html { scroll-behavior: smooth; font-size: 16px; }
